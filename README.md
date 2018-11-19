@@ -21,13 +21,13 @@
         - 簡化設計，也亦於未來維護工作
     - **物件導向方法 Objected-Oriented Methology**
         - **統一程序 UP, Unified Process**：by Booch & Rumbaugh, 1994
-            - 基本特性：反覆式發展、反覆並漸增式發展、接受改變並調整與適應、時間區間概念
+            - 基本特性：**反覆式發展**、**反覆並漸增式發展**、接受改變並調整與適應、時間區間概念
             - 統一程序階段：
                 - 起始階段 Inception：
                 - 詳細闡述階段 Elaboration：
                 - 建構階段 Construction：
                 - 轉換階段 Transition：
-        - **UML Unified Modeling Language**：by Jacobson, 1997
+        - **UML Unified Modeling Language**：by Jacobson & Booch & Rumbaugh, 1995
         - 基本特性：封裝、繼承、多型
 ### 1-2 軟體發展程序
 - 規範式程序 Prescriptive Process / 計畫驅動程序 Plan-Driven Process
@@ -87,3 +87,43 @@
     - 報表設計
     - 實作與測試計畫
     - 實際運行環境說明
+
+## Ch2 何謂物件導向系統分析設計
+#### 2-1 物件與物件導向概念
+- 類別 vs. 物件 vs. 方法
+- 物件導向觀念
+    - 系統是由一群物件組成
+    - 先決定系統所需要的物件
+    - 單一物件功能完整且獨立
+    - 善用物件封裝、繼承與多型的特性
+        - 封裝 Encapsulation
+            - 將一群相關的屬性和操作組成物件的型態
+            - 設計物件時應盡可能讓單一物件功能完整且獨立，與其他物件的相關程度降到最低
+        - 繼承 Inheritance
+            - 類別所定義的屬性和方法可以被其他的類別所使用
+        - 多型 Polymorphism
+            - 不同類別中可以存在相同的方法名稱，但其操作的內容可以不同
+            - 多型另一個性質稱之為覆載(override)
+                - 子類別繼承了父類別的屬性與方法，在使用子類別時， 以子類別的屬性與方法為主
+#### 2-2 UML 與物件基本原理
+- 提出者：Ivar Jacobson & Grady Booch & James Rumbaugh
+- 圖示定義 (x15)
+    - 結構性圖示 (x7)：：表達系統中個體的結構和其靜態關係
+        - 類別圖(Class diagram)：將系統所需要的類別(包含類別內的屬性和方法)和類別間的關係以關聯符號表現出來。
+        - 元件圖(Component diagram)：將系統中的類別分別組成不同元件，並表現出元件間的關係。
+        - 複合結構圖(Composite structure diagram)：描述類別的內部結構，即是類別內各部分組成的關係。
+        - 部署圖(Deployment diagram)：硬體與執行環境的描述，並描述系統的個體如何部署在這些硬體之中。
+        - 物件圖(Object diagram)：在某一個特定時間點，系統內部物件間的關係與狀態的描述。
+        - 套件圖(Package diagram)：套件由許多類別組成，描述這些套件間的關係。
+        - 輪廓圖(Profile diagram)：表現出類別的擴增機制， 利用慣用模板(stereotype)的方式來定義擴增的值或限制。輪廓圖經常用來擴增類別的使用平台(platform)或領域(domain)，其實也算是套件的一種。
+    - 行為式圖示 (x8)：表現系統物件間動態的關係
+        - 活動圖(Activity diagram)：描述企業運作流程，這些流程即是在使用案例內的描述，有時候也可用來表現方法內的程式流程。
+        - 循序圖(Sequence diagram)：描述一個使用案例中，如何透過物件間訊息的傳遞有次序地完成系統事件。
+        - 溝通圖(Communication diagram)：和循序圖相同，但更明顯表現出物件間互動溝通的關係。
+        - 交互概述圖(Interaction overview diagram)：表現程序控制的流程概述。
+        - 時間圖(Timing diagram)：描述一組物件間的互動，及經由時間軸狀態的改變。
+        - 行為狀態圖(Behavioral state machine diagram)：類別內行 為的表現。
+        - 協定狀態圖(Protocal state machine diagram)：單一類別內 不同介面間的關係。
+        - 使用案例圖(Use case diagram)：表現系統所有使用案例與 環境間的關係。
+#### 2-3 物件導向分析設計工具
+#### 2-4 物件導向分析設計程序
