@@ -37,7 +37,7 @@
         - 重構 Refactoring：改善程式結構但維持原有功能
         - 配對程式發展 Pair Programming：兩人一組開發，一人撰寫程式，一人負責測試
 - 瀑布式軟體發展程序 Waterfall Software Development Process
-    - 五個階段：需求  
+    - 五個階段：需求
                 |- 分析  
                     |- 設計  
                         |- 製作  
